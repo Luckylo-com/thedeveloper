@@ -1,20 +1,47 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #04071C;
+  --foreground: #ededed;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  --color-white: #FFFFFF;
+  --color-white2: rgba(255,255,255,0.40);
+  --color-gray: #E1DFFE;
+  --color-gray2: rgba(208,223,255,0.86);
+  --color-gray3: #D0DFFF;
+  --color-gray4: rgba(208,223,255,0.80);
+  --color-gray5: rgba(208,223,255,0.60);
+  --color-blue: #2757FF;
+  --color-bluemiddle: #0B1749;
+  --color-blue2: #323F6D;
+  --color-blue3: #2147CC;
+  --color-bluedark: #04071C;
+  --color-red: #FD4043;
+  --color-red2: rgba(253,64,67,0.20);
+
+  --breakpoint-lg1400: 1401px;
+  --breakpoint-lg1280: 1281px;
+  --breakpoint-lg1080: 1081px;
+  --breakpoint-md900: 901px;
+  --breakpoint-md820: 821px;
+  --breakpoint-md768: 769px;
+  --breakpoint-sm640: 641px;
+  --breakpoint-sm480: 481px;
+  --breakpoint-s425: 426px;
+  --breakpoint-s393: 394px;
+
+  --font-sans: var(--font-montserrat-sans);
+  --font-mono: var(--font-manrope-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #04071C;
     --foreground: #ededed;
   }
 }
@@ -23,4 +50,11 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.orb-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
 }
