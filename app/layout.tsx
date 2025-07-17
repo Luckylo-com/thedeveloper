@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Montserrat, Manrope } from "next/font/google";
 import "./globals.css";
+import { Toaster } from 'react-hot-toast';
+import { ModalSendEmail } from "@/app/components/modals/ModalSendEmail";
 
 const montserratFont = Montserrat({
   variable: "--font-montserrat-sans",
@@ -27,6 +29,8 @@ export default function RootLayout({
       <body
         className={`${montserratFont.variable} ${manropeFont.variable} antialiased`}
       >
+        <Toaster position='bottom-right' toastOptions={{duration: 3000}} />
+        <ModalSendEmail />
         {children}
       </body>
     </html>

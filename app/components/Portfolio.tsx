@@ -189,10 +189,11 @@ export function Portfolio() {
   return (
     <>
       <div id="portfolio" className="flex relative flex-col py-8 tracking-wider
-    font-[family-name:var(--font-manrope-mono)] max-w-[1600px] mx-auto">
+    font-[family-name:var(--font-manrope-mono)] max-w-[1600px] mx-auto
+    max-lg1400:w-[90%]">
         <div className="flex w-full justify-end">
           <h3 className="font-[family-name:var(--font-montserrat-sans)]
-      uppercase text-white text-5xl font-extrabold py-8">
+      uppercase text-white text-5xl font-extrabold py-8 max-lg1400:text-4xl">
             портфолио
           </h3>
         </div>
@@ -203,7 +204,8 @@ export function Portfolio() {
           <li>Игры</li>
         </ul>
         <GridMotion items={items} />
-        <p className="w-[80%] my-6 text-3xl font-medium">
+        <p className="w-[80%] my-6 text-3xl font-medium max-lg1280:text-2xl
+        max-md900:w-full max-md900:text-lg">
           Наша команда разработчиков, известная как The Developer, 
           специализируется на создании разнообразных приложений и 
           сервисов в сжатые сроки. Мы гордимся тем, что в нашем 

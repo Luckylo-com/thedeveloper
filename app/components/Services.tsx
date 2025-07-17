@@ -59,14 +59,14 @@ const servicesItems = [
     icon: <MdiRobot className="w-10 h-10 text-gray3" />,
     title: 'Разработка ботов для телеграм',
     description: <p className="flex flex-wrap gap-3">
-      <span className="mr-6">PITHON</span>
+      <span className="mr-6">PYTHON</span>
       <span className="mr-6">TELEGRAM BOT</span>
       <span>WHATSAPP BOT</span>
     </p>,
   },
   {
     description: <CircularText
-      text="PITHON*KOTLIN*UNITY*"
+      text="PYTHON*KOTLIN*UNITY*"
       onHover="speedUp"
       spinDuration={20}
       className="absolute z-30 -top-[10%]"
@@ -79,25 +79,30 @@ export function Services() {
     <>
       <div id="services" className="flex relative flex-col py-8 bg-white tracking-wider
     font-[family-name:var(--font-manrope-mono)]">
-        <div className="max-w-[1600px] mx-auto">
+        <div className="max-w-[1600px] mx-auto max-lg1400:w-[90%]">
           <h3 className="font-[family-name:var(--font-montserrat-sans)] uppercase text-5xl
-      text-bluedark font-extrabold py-8">услуги</h3>
-          <div className="flex gap-14">
-            <div className="w-[75%] grid grid-cols-1 md:grid-cols-3 gap-8">
+      text-bluedark font-extrabold py-8 max-lg1400:text-4xl">
+        услуги</h3>
+          <div className="flex gap-14 max-lg1400:gap-8 max-lg1080:flex-col">
+            <div className="w-[75%] grid grid-cols-1 md:grid-cols-3 gap-8
+            max-lg1400:w-[80%] max-lg1080:w-full">
               {servicesItems.map((service, idx) => (
                 <SpotLightCard key={idx}
                   className="z-20 rounded-xl shadow p-8 flex flex-col
-            text-left gap-6 bg-bluedark border border-red"
+            text-left gap-6 bg-bluedark border border-red max-lg1080:gap-4
+            max-md900:p-6"
                   spotlightColor="rgba(39, 87, 255, 0.60)">
-                  <div>{service.icon}</div>
+                  <div className="">{service.icon}</div>
                   <div className="font-bold text-2xl leading-[1.36]
-              text-gray3">{service.title}</div>
-                  <div className="font-light text-xl  leading-[1.36]
-              text-gray3">{service.description}</div>
+              text-gray3 max-lg1080:text-xl">{service.title}</div>
+                  <div className="font-light text-xl leading-[1.36]
+              text-gray3 max-lg1080:text-lg max-md900:leading-[1]">
+                {service.description}</div>
                 </SpotLightCard>
               ))}
             </div>
-            <h4 className="flex w-[35%] flex-col mt-6 text-3xl font-medium text-bluedark">
+            <h4 className="flex w-[35%] flex-col mt-6 text-3xl font-medium text-bluedark
+            max-lg1400:w-[20%] max-lg1400:text-2xl max-lg1080:w-full">
               <span>Наша цель - превращать</span>
               <span>идеи заказчика</span>
               <span>в функциональные</span>
