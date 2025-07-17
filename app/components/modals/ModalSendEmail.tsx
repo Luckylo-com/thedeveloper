@@ -125,7 +125,7 @@ export function ModalSendEmail() {
         //className="tracking-widest text-base font-normal"
         />
         <Link
-          href={"/policy"}
+          href={"/"}
           target="_blank"
           className="accept_polisy_link underline decoration-blue ml-2"
         >
