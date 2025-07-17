@@ -65,8 +65,34 @@ const servicesItems = [
     </p>,
   },
   {
+    icon: <MingcuteGame2Fill className="w-10 h-10 text-gray3" />,
+    title: 'Внедрение платёжной системы на сайт и в приложение',
+    description: <p className="flex flex-wrap gap-3">
+      <span className="mr-6"></span>
+      <span className=""></span>
+    </p>,
+  },
+  {
+    icon: <MaterialSymbolsAutoTransmission className="w-10 h-10 text-gray3" />,
+    title: 'Подключение и открытие кабинетов Apple Developer и Google Developer (Play Console) для загрузки приложений на iOS и Android.',
+    description: <p className="flex flex-wrap gap-3">
+      <span className="mr-6"></span>
+      <span className="mr-6"></span>
+      <span></span>
+    </p>,
+  },
+  {
+    icon: <MdiRobot className="w-10 h-10 text-gray3" />,
+    title: 'Также выполняем работу с контроллером Arduino и программированием под него',
+    description: <p className="flex flex-wrap gap-3">
+      <span className="mr-6"></span>
+      <span className="mr-6"></span>
+      <span></span>
+    </p>,
+  },
+  {
     description: <CircularText
-      text="PYTHON*KOTLIN*UNITY*"
+      text="UNITY*FLUTTER*SWIFT*"
       onHover="speedUp"
       spinDuration={20}
       className="absolute z-30 -top-[10%]"
