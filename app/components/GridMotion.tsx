@@ -98,7 +98,7 @@ const GridMotion: FC<GridMotionProps> = ({
           {Array.from({ length: 6 }, (_, rowIndex) => (
             <div
               key={rowIndex}
-              className="grid gap-4 grid-cols-3"
+              className="grid gap-4 grid-cols-3 max-s393:grid-cols-1"
               style={{ willChange: "transform, filter" }}
               ref={(el) => {
                 if (el) rowRefs.current[rowIndex] = el;
