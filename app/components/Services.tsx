@@ -81,11 +81,11 @@ export function Services() {
     font-[family-name:var(--font-manrope-mono)]">
         <div className="max-w-[1600px] mx-auto max-lg1400:w-[90%]">
           <h3 className="font-[family-name:var(--font-montserrat-sans)] uppercase text-5xl
-      text-bluedark font-extrabold py-8 max-lg1400:text-4xl">
+      text-bluedark font-extrabold py-8 max-lg1400:text-4xl max-sm480:text-3xl">
         услуги</h3>
           <div className="flex gap-14 max-lg1400:gap-8 max-lg1080:flex-col">
-            <div className="w-[75%] grid grid-cols-1 md:grid-cols-3 gap-8
-            max-lg1400:w-[80%] max-lg1080:w-full">
+            <div className="w-[75%] grid grid-cols-3 max-md900:grid-cols-2 gap-8
+            max-lg1400:w-[80%] max-lg1080:w-full max-md900:gap-6 max-sm480:grid-cols-1">
               {servicesItems.map((service, idx) => (
                 <SpotLightCard key={idx}
                   className="z-20 rounded-xl shadow p-8 flex flex-col

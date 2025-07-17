@@ -14,10 +14,10 @@ export function Footer() {
     <>
       <div className="flex flex-col py-4 tracking-wider
     font-[family-name:var(--font-manrope-mono)] border-t-[1px] border-t-gray5
-    h-[100px]">
+    h-[100px] max-sm480:h-[150px]">
         <div className="relative w-full max-w-[1600px] mx-auto max-lg1400:w-[90%]">
           <div className="flex justify-center items-center text-4xl gap-6 text-gray5
-          py-4 max-lg1280:text-3xl">
+          py-4 max-lg1280:text-3xl max-md900:text-2xl">
             <Link
               href="/"
               target="_blank"
@@ -55,7 +55,8 @@ export function Footer() {
             </Link>
           </div>
           <span className="absolute text-gray5 font-medium text-2xl top-[35%] right-0
-          max-lg1280:text-xl max-lg1280:top-[25%]">
+          max-lg1280:text-xl max-lg1280:top-[25%] max-sm480:relative max-sm480:flex
+          max-sm480:justify-center">
             &copy; The developer - {year}</span>
         </div>
       </div>

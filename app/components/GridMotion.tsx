@@ -36,7 +36,7 @@ const GridMotion: FC<GridMotionProps> = ({
   };
 }, []);
 
-  const totalItems = 28;
+  const totalItems = 8;
   const defaultItems = Array.from(
     { length: totalItems },
     (_, index) => `Item ${index + 1}`
@@ -93,18 +93,18 @@ const GridMotion: FC<GridMotionProps> = ({
         }}
       >
         <div className="absolute inset-0 pointer-events-none z-[4] bg-[length:250px]"></div>
-        <div className="gap-4 flex-none relative w-[180vw] h-[180vh] grid grid-rows-4 grid-cols-1 rotate-[-10deg]
-        origin-center z-[2]">
-          {Array.from({ length: 4 }, (_, rowIndex) => (
+        <div className="gap-4 flex-none relative w-[100vw] h-[100vh] grid grid-rows-1 grid-cols-1
+        rotate-[-10deg] origin-center z-[2]">
+          {Array.from({ length: 6 }, (_, rowIndex) => (
             <div
               key={rowIndex}
-              className="grid gap-4 grid-cols-7"
+              className="grid gap-4 grid-cols-3"
               style={{ willChange: "transform, filter" }}
               ref={(el) => {
                 if (el) rowRefs.current[rowIndex] = el;
               }}
             >
-              {Array.from({ length: 7 }, (_, itemIndex) => {
+              {Array.from({ length: 6 }, (_, itemIndex) => {
                 const content = combinedItems[rowIndex * 7 + itemIndex];
                 return (
                   <div key={itemIndex} className="relative">

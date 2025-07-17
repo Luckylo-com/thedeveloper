@@ -38,7 +38,7 @@ export function PortfolioApps() {
         <div className="flex w-full justify-start">
           <h3 className="flex items-start font-[family-name:var(--font-montserrat-sans)]
           uppercase text-4xl text-bluedark font-semibold py-8 z-10 ml-6
-          max-lg1400:text-3xl max-lg1080:py-4">
+          max-lg1400:text-3xl max-lg1080:py-4 max-sm480:text-2xl">
             приложения
           </h3>
         </div>
@@ -49,7 +49,8 @@ export function PortfolioApps() {
         </div>
         {/* Grid container */}
         <motion.div
-          className="grid grid-cols-3 mt-8 gap-8 z-10 max-md900:grid-cols-2"
+          className="grid grid-cols-3 mt-8 gap-8 z-10 max-md900:grid-cols-2
+          max-md768:gap-6 max-sm640:grid-cols-1"
           layout
         >
           <AnimatePresence>
@@ -81,10 +82,11 @@ export function PortfolioApps() {
         {portfolioAppsData.length > 6 && (
           <button
             onClick={() => setShowAll((prev) => !prev)}
-            className="flex justify-center items-center max-w-fit h-[70px]
+            className="flex relative justify-center items-center max-w-fit h-[70px]
             bg-red my-8 text-white text-2xl font-medium rounded-xl
             outline-[1px] outline-offset-[5px] outline-solid outline-red px-16 pb-1
-            cursor-pointer hover:bg-red-500 max-lg1280:h-[50px] max-lg1280:px-11"
+            cursor-pointer z-20 hover:bg-red-500 max-lg1280:h-[50px] max-lg1280:px-11
+            max-sm640:text-xl"
           >
             {showAll ? "скрыть" : "показать ещё"}
           </button>

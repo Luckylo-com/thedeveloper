@@ -54,9 +54,10 @@ export function Header() {
     <>
       <div className="fixed z-50 top-0 w-full self-center bg-bluedark">
         <div className="flex overflow-hidden h-[100px] max-w-[1600px] mx-auto
-      font-[family-name:var(--font-manrope-mono)] justify-between max-lg1400:w-[90%]">
-          <div className="flex w-[30%] items-center gap-4 max-md900:w-[50%]">
-            <div>
+      font-[family-name:var(--font-manrope-mono)] justify-between max-lg1400:w-[90%]
+      max-sm480:h-[80px]">
+          <div className="flex w-[30%] items-center gap-4 max-md900:w-[50%] max-s393:w-[75%]">
+            <div className="max-sm480:size-[30px]">
               <Image
                 alt="logo"
                 width={43}
@@ -65,7 +66,7 @@ export function Header() {
               />
             </div>
             <div className="font-[family-name:var(--font-montserrat-sans)] text-4xl
-            font-extrabold text-gray3 max-lg1080:text-3xl">The developer</div>
+            font-extrabold text-gray3 max-lg1080:text-3xl max-sm480:text-xl">The developer</div>
           </div>
           <div className="flex w-[50%] items-center justify-between max-lg1280:justify-end
           max-md900:hidden">
@@ -88,8 +89,10 @@ export function Header() {
             </nav>
           </div>
           {/* menu mobile start */}
-          <div className="hidden max-md900:flex w-[30%] items-center justify-end">
-            <div className="flex justify-center items-center text-gray2 text-[42px]">
+          <div className="hidden max-md900:flex w-[30%] items-center justify-end
+          max-s393:w-[20%] max-s393:justify-center">
+            <div className="flex justify-center items-center text-gray2 text-[42px]
+            max-sm480:text-[30px]">
               <MingcuteMenuFill
                 onClick={toggleOpenMainMenu}
               />
@@ -128,19 +131,22 @@ export function Header() {
             </>
           )}
           {/* menu mobile end */}
-          <div className="flex w-[20%] items-center gap-8 max-lg1400:justify-end">
+          <div className="flex w-[20%] items-center gap-8 max-lg1400:justify-end
+          max-sm640:gap-4">
             <Link
               href="https://wa.me/77051121106"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex justify-center items-center text-gray2 text-[39px]">
+              className="flex justify-center items-center text-gray2 text-[39px]
+              max-sm480:text-[30px]">
               <FormkitWhatsapp />
             </Link>
             <Link
               href="https://t.me/the_developer"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex justify-center items-center text-gray2 text-4xl">
+              className="flex justify-center items-center text-gray2 text-4xl
+              max-sm480:text-[27px]">
               <JamTelegram />
             </Link>
           </div>

@@ -117,7 +117,7 @@ export function ModalSendEmail() {
           w-full max-s393:text-base"
         />
       </div>
-      <div className="flex">
+      <div className="flex flex-col">
         <Checkbox
           label="Я даю согласие на обработку персональных данных в соответствии с"
           checked={isChecked}

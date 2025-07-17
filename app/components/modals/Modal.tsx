@@ -39,7 +39,7 @@ export function Modal({ isOpen, onClose, body, disabled }: ModalProps) {
     <>
       <div
         className="fixed w-full h-full justify-center items-center flex overflow-x-hidden overflow-y-scroll
-      inset-0 z-[10000] outline-none bg-black/70"
+      inset-0 z-[1000] outline-none bg-black/70"
       >
         <div
           className="relative bg-white mx-auto h-auto w-[540px] top-0 rounded-2xl
@@ -59,10 +59,10 @@ export function Modal({ isOpen, onClose, body, disabled }: ModalProps) {
             left-0 right-0 mx-auto outline-none focus:outline-none"
             >
               {/* {header} */}
-              <div className="flex items-center p-6 rounded-t justify-center relative">
+              <div className="flex relative items-center p-6 justify-center z-40">
                 <button
                   onClick={handleClose}
-                  className="p-1 hover:opacity-70 transition absolute right-4 top-4 text-3xl
+                  className="hover:opacity-70 transition absolute right-4 top-4 text-3xl
                   text-blue/30 cursor-pointer"
                 >
                   <MaterialSymbolsCancel />
