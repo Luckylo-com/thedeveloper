@@ -21,6 +21,7 @@ export function MainScreen() {
 
   return (
     <>
+    <div className="flex w-full">
       <div className="flex relative w-[55%] justify-between mx-auto my-[10rem]
       max-l1440:w-[70%] max-l1440:mb-[5rem] max-lg1080:w-[90%] max-sm640:mt-[7.5rem]
       max-sm640:mb-6 max-sm480:mt-[5rem]">
@@ -81,7 +82,8 @@ export function MainScreen() {
             smooth={true}
           />
         </div>
-        {/* <div style={{ width: '100%', height: '600px', position: 'absolute', zIndex: '10' }}
+      </div>
+      {/* <div style={{ width: '100%', height: '600px', position: 'absolute', zIndex: '10' }}
         className="h-inherit max-lg1400:h-[400px]"> */}
           <div className="w-full absolute z-10 h-[600px] max-l1440:h-[500px]
           max-sm640:h-[400px]">
