@@ -1,7 +1,7 @@
 
 import { PortfolioApps } from "@/app/types/portfolioapps";
 
-const portfolioAppsData: PortfolioApps[] =[
+const portfolioAppsData: PortfolioApps[] = [
   {
     id: 1,
     title: "Muftiat.kz – духовный компас мусульман Казахстана",

@@ -24,6 +24,8 @@
   --color-red: #FD4043;
   --color-red2: rgba(253,64,67,0.20);
 
+  --breakpoint-l1680: 1681px;
+  --breakpoint-l1440: 1441px;
   --breakpoint-lg1400: 1401px;
   --breakpoint-lg1280: 1281px;
   --breakpoint-lg1080: 1081px;

@@ -11,10 +11,10 @@ export function Contacts() {
     <>
       <div id="contacts" className="flex flex-col h-[655px] relative py-8 tracking-wider
     font-[family-name:var(--font-manrope-mono)] overflow-hidden bg-bluedark
-    max-lg1400:h-[550px] max-md900:py-4 max-md900:h-[350px] max-sm480:h-[570px]">
+    max-l1440:h-[550px] max-md900:py-4 max-md900:h-[350px] max-sm480:h-[570px]">
         <div className="z-5 top-0 left-0">
           {/* style={{ width: '100%', height: '655px', position: 'absolute' }} */}
-          <div className="w-full h-[655px] top-6 absolute z-5 max-lg1400:h-[550px]
+          <div className="w-full h-[655px] top-6 absolute z-5 max-l1440:h-[550px]
           max-md900:h-[350px] max-sm480:h-[570px]"
           >
             <DotGrid
@@ -31,12 +31,12 @@ export function Contacts() {
           </div>
         </div>
         <div className="flex w-full items-center max-w-[1600px] mx-auto z-10 mb-8
-        max-lg1400:w-[90%] max-sm480:flex-col">
+        max-l1440:w-[90%] max-sm480:flex-col">
           <div className="flex relative justify-center items-center w-[50%] pl-[5rem]
-          max-lg1400:pl-[2rem] max-md900:pl-0">
+          max-l1440:pl-[2rem] max-md900:pl-0">
             {/* style={{ width: '600px', height: '600px', position: 'relative' }} */}
-            <div className="w-[600px] h-[600px] relative max-lg1400:w-[450px]
-            max-lg1400:h-[450px] max-md900:w-[300px] max-md900:h-[300px]">
+            <div className="w-[600px] h-[600px] relative max-l1440:w-[450px]
+            max-l1440:h-[450px] max-md900:w-[300px] max-md900:h-[300px]">
               <Orb
                 hoverIntensity={0.5}
                 rotateOnHover={true}
@@ -46,17 +46,17 @@ export function Contacts() {
             </div>
             <div className="absolute text-gray4 self-center">
               <h5 className="font-[family-name:var(--font-montserrat-sans)]
-              font-extrabold text-5xl max-lg1400:text-4xl max-md900:text-2xl">
+              font-extrabold text-5xl max-l1440:text-4xl max-md900:text-2xl">
                 КОНТАКТЫ</h5>
-              <div className="flex flex-col font-medium text-2xl max-lg1400:text-xl
+              <div className="flex flex-col font-medium text-2xl max-l1440:text-xl
               max-md900:text-base">
                 <span>пишите нам, мы ждем</span>
                 <span>вашего сообщения</span>
               </div>
             </div>
           </div>
-          <div className="flex flex-col gap-[3rem] text-3xl max-lg1400:gap-[2rem]
-          max-lg1400:text-2xl max-lg1280:text-xl">
+          <div className="flex flex-col gap-[3rem] text-3xl max-l1440:gap-[2rem]
+          max-l1440:text-2xl max-lg1280:text-xl">
             <div className="flex flex-col gap-4 max-lg1280:gap-2 max-md900:gap-0">
               <div className="flex gap-4 items-center">
                 <Link

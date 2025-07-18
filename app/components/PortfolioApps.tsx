@@ -34,16 +34,16 @@ export function PortfolioApps() {
       <div className="flex relative flex-col py-8 bg-gray tracking-wider
       font-[family-name:var(--font-manrope-mono)]">
       <div className="flex relative flex-col items-center max-w-[1600px] mx-auto
-      max-lg1400:w-[90%]">
+      max-l1440:w-[90%]">
         <div className="flex w-full justify-start">
           <h3 className="flex items-start font-[family-name:var(--font-montserrat-sans)]
           uppercase text-4xl text-bluedark font-semibold py-8 z-10 ml-6
-          max-lg1400:text-3xl max-lg1080:py-4 max-sm480:text-2xl">
+          max-l1440:text-3xl max-lg1080:py-4 max-sm480:text-2xl">
             приложения
           </h3>
         </div>
-        <div className="absolute z-5 top-0 left-0 max-lg1400:size-[4rem]
-        max-lg1400:top-[1rem] max-lg1080:top-0">
+        <div className="absolute z-5 top-0 left-0 max-l1440:size-[4rem]
+        max-l1440:top-[1rem] max-lg1080:top-0">
           <Image alt="Ellips" width={100} height={100} src="/Ellipse.svg"
          />
         </div>

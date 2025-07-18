@@ -105,13 +105,13 @@ export function Services() {
     <>
       <div id="services" className="flex relative flex-col py-8 bg-white tracking-wider
     font-[family-name:var(--font-manrope-mono)]">
-        <div className="max-w-[1600px] mx-auto max-lg1400:w-[90%]">
+        <div className="max-w-[1600px] mx-auto max-l1440:w-[90%]">
           <h3 className="font-[family-name:var(--font-montserrat-sans)] uppercase text-5xl
-      text-bluedark font-extrabold py-8 max-lg1400:text-4xl max-sm480:text-3xl">
+      text-bluedark font-extrabold py-8 max-l1440:text-4xl max-sm480:text-3xl">
         услуги</h3>
-          <div className="flex gap-14 max-lg1400:gap-8 max-lg1080:flex-col">
+          <div className="flex gap-14 max-l1440:gap-8 max-lg1080:flex-col">
             <div className="w-[75%] grid grid-cols-3 max-md900:grid-cols-2 gap-8
-            max-lg1400:w-[80%] max-lg1080:w-full max-md900:gap-6 max-sm480:grid-cols-1">
+            max-l1440:w-[80%] max-lg1080:w-full max-md900:gap-6 max-sm480:grid-cols-1">
               {servicesItems.map((service, idx) => (
                 <SpotLightCard key={idx}
                   className="z-20 rounded-xl shadow p-8 flex flex-col
@@ -128,7 +128,7 @@ export function Services() {
               ))}
             </div>
             <h4 className="flex w-[35%] flex-col mt-6 text-3xl font-medium text-bluedark
-            max-lg1400:w-[20%] max-lg1400:text-2xl max-lg1080:w-full">
+            max-l1440:w-[20%] max-l1440:text-2xl max-lg1080:w-full">
               <span>Наша цель - превращать</span>
               <span>идеи заказчика</span>
               <span>в функциональные</span>

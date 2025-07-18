@@ -6,8 +6,8 @@ import { useState, useCallback, useEffect, useRef } from "react";
 import FormkitWhatsapp from "@/app/icons/FormkitWhatsapp";
 import JamTelegram from "@/app/icons/JamTelegram";
 import MingcuteMenuFill from "@/app/icons/MingcuteMenuFill";
-
 import MaterialSymbolsCancel from "@/app/icons/MaterialSymbolsCancel";
+
 
 const menuItems = [
   { label: 'О нас', anchor: 'about' },
@@ -54,8 +54,8 @@ export function Header() {
     <>
       <div className="fixed z-50 top-0 w-full self-center bg-bluedark">
         <div className="flex overflow-hidden h-[100px] max-w-[1600px] mx-auto
-      font-[family-name:var(--font-manrope-mono)] justify-between max-lg1400:w-[90%]
-      max-sm480:h-[80px]">
+      font-[family-name:var(--font-manrope-mono)] justify-between max-l1440:w-[90%]
+      max-lg1400:w-[90%] max-sm480:h-[80px]">
           <div className="flex w-[30%] items-center gap-4 max-md900:w-[50%] max-s393:w-[75%]">
             <div className="max-sm480:size-[30px]">
               <Image
@@ -63,6 +63,7 @@ export function Header() {
                 width={43}
                 height={47}
                 src={"/developer-logo.svg"}
+                className="hover:fill-gray"
               />
             </div>
             <div className="font-[family-name:var(--font-montserrat-sans)] text-4xl
@@ -131,7 +132,7 @@ export function Header() {
             </>
           )}
           {/* menu mobile end */}
-          <div className="flex w-[20%] items-center gap-8 max-lg1400:justify-end
+          <div className="flex w-[20%] items-center gap-8 max-l1440:justify-end
           max-sm640:gap-4">
             <Link
               href="https://wa.me/77051121106"

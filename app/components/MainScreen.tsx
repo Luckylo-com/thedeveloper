@@ -22,9 +22,9 @@ export function MainScreen() {
   return (
     <>
       <div className="flex relative w-[55%] justify-between mx-auto my-[10rem]
-      max-lg1400:w-[70%] max-lg1400:mb-[5rem] max-lg1080:w-[90%] max-sm640:mt-[7.5rem]
+      max-l1440:w-[70%] max-l1440:mb-[5rem] max-lg1080:w-[90%] max-sm640:mt-[7.5rem]
       max-sm640:mb-6 max-sm480:mt-[5rem]">
-        <div className="flex flex-col z-20 max-lg1400:pt-[2rem]">
+        <div className="flex flex-col z-20 max-l1440:pt-[2rem]">
           {/* <h1 className="font-[family-name:var(--font-montserrat-sans)] text-white
           text-6xl font-extrabold my-4">MOBILE + WEB</h1> */}
           <h1 className="">
@@ -64,8 +64,8 @@ export function MainScreen() {
           </div>
         </div>
         <div className="w-[350px] h-[350px] rounded-xl border-[1px] border-gray3
-        -rotate-10 opacity-60 overflow-hidden mr-[6rem] max-lg1400:mr-[3rem]
-        max-lg1400:w-[300px] max-lg1400:h-[300px] max-lg1080:mr-[10rem]
+        -rotate-10 opacity-60 overflow-hidden mr-[6rem] max-l1440:mr-[3rem]
+        max-l1440:w-[300px] max-l1440:h-[300px] max-lg1080:mr-[10rem]
         max-md900:mr-[2rem] max-sm640:w-[200px] max-sm640:h-[200px] max-sm480:hidden">
           {/* <Image
             alt="Code"
@@ -83,7 +83,7 @@ export function MainScreen() {
         </div>
         {/* <div style={{ width: '100%', height: '600px', position: 'absolute', zIndex: '10' }}
         className="h-inherit max-lg1400:h-[400px]"> */}
-          <div className="w-full absolute z-10 h-[600px] max-lg1400:h-[500px]
+          <div className="w-full absolute z-10 h-[600px] max-l1440:h-[500px]
           max-sm640:h-[400px]">
           <Particles
             particleColors={['#ffffff', '#ffffff']}

@@ -15,7 +15,7 @@ export function Footer() {
       <div className="flex flex-col py-4 tracking-wider
     font-[family-name:var(--font-manrope-mono)] border-t-[1px] border-t-gray5
     h-[100px] max-sm480:h-[150px]">
-        <div className="relative w-full max-w-[1600px] mx-auto max-lg1400:w-[90%]">
+        <div className="relative w-full max-w-[1600px] mx-auto max-l1440:w-[90%]">
           <div className="flex justify-center items-center text-4xl gap-6 text-gray5
           py-4 max-lg1280:text-3xl max-md900:text-2xl">
             <Link

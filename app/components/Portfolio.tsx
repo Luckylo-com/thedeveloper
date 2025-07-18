@@ -177,10 +177,10 @@ export function Portfolio() {
     <>
       <div id="portfolio" className="flex relative flex-col py-8 tracking-wider
     font-[family-name:var(--font-manrope-mono)] max-w-[1600px] mx-auto
-    max-lg1400:w-[90%]">
+    max-l1440:w-[90%]">
         <div className="flex w-full justify-end">
           <h3 className="font-[family-name:var(--font-montserrat-sans)]
-      uppercase text-white text-5xl font-extrabold py-8 max-lg1400:text-4xl
+      uppercase text-white text-5xl font-extrabold py-8 max-l1440:text-4xl
       max-sm480:text-3xl">
             портфолио
           </h3>
