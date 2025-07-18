@@ -12,7 +12,7 @@ export async function POST(req: NextRequest) {
     await req.json();
   const data = await resend.emails.send({
     from: "Admin <onboarding@resend.dev>",
-    to: ["rareachi@gmail.com"],
+    to: ["atlascinemakz@gmail.com"],
     subject: "Заказ с сайта The developer",
     react: EmailTemplate({
       nameClient,
